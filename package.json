@@ -1,0 +1,27 @@
+{
+    "name": "create-electron-app",
+    "version": "0.0.1",
+    "description": "Stuck with boring old npm init to create electron apps electrify your process with this awesome boilerplate.",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "build-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/Icon/icon.ico --prune=true --out=release-builds ",
+        "build-mac": "electron-packager . --overwrite --asar=true --platform=darwin --arch=x64 --icon=src/Icon/icon.icns --prune=true --out=release-builds ",
+        "build-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=src/Icon/icon.png --prune=true --out=release-builds",
+        "build-all": "npm run build-win && npm run build-mac && npm run build-linux "
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sanatg/create-electron-app.git"
+    },
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/sanatg/create-electron-app/issues"
+    },
+    "homepage": "https://github.com/sanatg/create-electron-app#readme",
+    "dependencies": {
+        "electron": "^13.1.1",
+        "electron-packager": "^15.2.0",
+        "electron-reload": "^1.5.0"
+    }
+}

@@ -1,0 +1,35 @@
+* {
+    font-family: Roboto;
+    text-align: center;
+}
+.App {
+    color: #ffffff;
+    text-align: center;
+    background: #242424;
+}
+
+.electron-img {
+    height: 50px;
+    animation: Rotate 3s linear infinite;
+    margin-top: 30px;
+}
+@keyframes Rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+  font-size: 50px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:30px;   /* Height of the footer */
+    background:#6cf;
+    color:black;
+ }
